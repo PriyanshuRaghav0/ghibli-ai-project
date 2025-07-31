@@ -1,22 +1,165 @@
 /* src/index.css */
-
 body {
-  background-color: #fdfcf7;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #DBE4C9;
+  color: #333;
 }
 
-h1, h5 {
-  color: #2e3a59;
+.ghibli-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
 }
 
-.container {
-  max-width: 960px;
+.hero-section {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
+.hero-description {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
+
+.card {
+  border: none;
+  border-radius: 25px;
+  transition: transform 0.2s;
+  width: 70%;
+  border: solid 3px darkgray;
+  font-family: "Gill Sans MT";
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.free-notice {
+  background-color: #B2B0E8;
+  color: #B2B0E8;
+  font-weight: 500;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+/* Ghibli-inspired colors */
+.btn-primary {
+  background-color: #B2B0E8;
+  border-color: #4a8fe7;
+  width: 10px;
+}
+
+.btn-primary:hover {
+  background-color: rgba(118, 232, 10, 0.56);
+  border-color: #3a7bd5;
+}
+
+.btn-success {
+  background-color: rgba(243, 179, 82, 0.75);
+  border-color: #5cb85c;
+  border-radius: 25px;
+
+
+
+}
+
+
+
+/* Example Cards Styling */
+.example-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+  border-radius: 30px;
+  width: 80%;
+  border: solid 2px black;
+}
+
+.example-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.example-card img {
+  height: 150px;
+  width: 80%;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  border-radius: 30px;
+  margin: 10px 10px ;
+}
+
+/* src/components/GhibliShowcase.css */
+
+.ghibli-section {
+  background-color: #DBE4C9;
+  padding: 3rem 1rem;
+}
+
+.ghibli-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ghibli-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  overflow: hidden;
+}
+
+.ghibli-images {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+
+.ghibli-images img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.image-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  z-index: 1;
+}
+
+.image-label.after {
+  left: 52%;
+  background: #50e2c4;
+  color: white;
+}
+
+.ghibli-content {
+  padding: 1rem;
+}
+
+.ghibli-content h5 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.ghibli-content p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+
+                                                     /* CSS */

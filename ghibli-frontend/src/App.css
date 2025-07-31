@@ -14,3 +14,19 @@ form {
 form label {
   font-weight: 500;
 }
+
+
+@keyframes ghibli-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.ghibli-spinner {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 0.25em solid var(--ghibli-blue);
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: ghibli-spin 0.75s linear infinite;
+}
